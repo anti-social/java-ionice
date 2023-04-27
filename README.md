@@ -10,5 +10,5 @@ At the moment it will not build as it is required patched `rust-jvmti` library.`
 ## How to run
 
 ``` sh
-java -agentpath:libjava_ionice.so=thread_name=reader_1,prio=idle;thread_name=reader_2,prio=best_effort(7) Main
+java -agentpath:libjava_ionice.so="thread_name=reader_1,prio=idle;thread_name=reader_2,prio=best_effort(7)" Main
 ```
